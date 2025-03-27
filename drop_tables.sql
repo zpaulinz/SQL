@@ -1,0 +1,26 @@
+--MySQL
+DROP TABLE IF EXISTS users;
+
+--PostgreSQL
+DROP TABLE IF EXISTS users;
+
+--Oracle
+BEGIN
+  EXECUTE IMMEDIATE 'DROP TABLE users';
+EXCEPTION
+  WHEN OTHERS THEN
+    NULL;
+END;
+/
+
+-- DROP TABLE users;
+
+--MS SQL
+IF OBJECT_ID('users', 'U') IS NOT NULL
+  DROP TABLE users;
+
+--SQLite
+DROP TABLE IF EXISTS users;
+
+--MariaDB
+DROP TABLE IF EXISTS users;
